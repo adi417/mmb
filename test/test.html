@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>ree</h1>
+	<script src="jquery/jquery.min.js"></script>
+	<script type="text/javascript">
+		$.ajax({
+			type:"get",
+			url:"http://192.168.32.77:9090/api/getindexmenu",
+			dataType:"json",
+			success:function (data) {
+			console.log	(data);
+			}
+		})
+	</script>
+</body>
+
+</html>
